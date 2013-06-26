@@ -1,0 +1,20 @@
+<template name="selectedGroup">
+	<div class="group">
+		
+		<h3 class="voteGroupName">{{name}}</h3>
+		{{#if votedAlready}}
+			<h5 class="voteMessage">Thanks for the vote!</h5>
+		{{/if}}
+		<span class="votingContainer">
+			{{#if votedAlready}}
+				{{#each listPlaces}}
+					<button type="button" class="btn vote" style="width: 100%" disabled>{{restaurant.name}}<br/>{{restaurant.vicinity}}<br/>{{votes}} votes<br/></button>
+				{{/each}}
+			{{else}}
+				{{#each listPlaces}}
+					<button type="button" class="btn vote" style="width: 100%">{{restaurant.name}}<br/>{{restaurant.vicinity}}<br/>{{votes}} votes<br/></button>
+				{{/each}}
+			{{/if}}
+		</span>
+	</div>
+</template>

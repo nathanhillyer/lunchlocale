@@ -1,0 +1,71 @@
+.grid-block, .main, .group, .comments li, .comment-form {
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+body {
+    background: #eee;
+    color: #666666;
+}
+.voteGroupName {
+    text-align: center;
+}
+.voteMessage {
+    text-align: center;
+    color: rgb(225,0,0);
+}
+.votingContainer {
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    background: rgb(190, 190, 190);
+    display: table;
+    padding: 2.5px 5px;
+}
+.vote { 
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    max-width: 100%;
+    width: 100%;
+    white-space: normal;
+}
+.navbar { margin-bottom: 10px }
+.navbar .navbar-inner {
+    border-radius: 0px 0px 3px 3px;
+}
+.createGroup { 
+    float: right; 
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.group {
+    *zoom: 1;
+    -webkit-transition: all 300ms 0ms;
+    -webkit-transition-delay: ease-in;
+    -moz-transition: all 300ms 0ms ease-in;
+    -o-transition: all 300ms 0ms ease-in;
+    transition: all 300ms 0ms ease-in;
+    position: relative;
+    opacity: 1;
+}
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #000000;
+    opacity: .4;
+    z-index: 1;
+}
+.groupInput{
+    margin: 0 0 7px 0;
+    text-align: center;
+}
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+.group:after { clear: both }

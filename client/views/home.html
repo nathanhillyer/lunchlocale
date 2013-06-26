@@ -1,0 +1,21 @@
+<template name="home">
+	{{#if showCreateGroupDialog}}
+		{{> createGroupDialog}}
+	{{/if}}
+	<div class="container">
+		<header class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="/">Lunch Locale</a>
+						<a href="#" class="createGroup">Create Group</a>
+			</div>
+		</header>
+		<div id="main" class="row-fluid">
+			{{#if showSelectedGroup}}
+				{{#with getSelectedGroup}}
+					{{> selectedGroup}}
+				{{/with}}
+			{{/if}}
+			{{> groupsList}}
+		</div>
+	</div>
+</template>

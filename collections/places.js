@@ -1,0 +1,1 @@
+Places = new Meteor.Collection('Places');
